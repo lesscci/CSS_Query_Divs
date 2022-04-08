@@ -1,0 +1,65 @@
+* {
+  font-family: "Lexend Deca", sans-serif;
+  color: #fff;
+}
+
+* body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100vh;
+}
+
+* body h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+* body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* body .sedans {
+  background-color: orange;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+* body .suvs {
+  background-color: turquoise;
+}
+
+* body .luxury {
+  background-color: blue;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+* body .bottom {
+  border-radius: 50px;
+  border-bottom: none;
+  text-align: center;
+}
+
+/* Mobile screen*/
+@media screen and (max-width: 375px) {
+  body {
+    background-color: pink;
+  }
+}
+
+/* Desktop*/
+@media screen and (min-width: 1440px) {
+  body {
+    background-color: antiquewhite;
+  }
+}
+/*# sourceMappingURL=style.css.map */

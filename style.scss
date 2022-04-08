@@ -1,0 +1,58 @@
+* {
+  font-family: "Lexend Deca", sans-serif;
+  color: #fff;
+
+  body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100vh;
+  
+
+    h1 {
+      font-family: "Big Shoulders Display", sans-serif;
+    }
+    .container{
+      display: flex;
+    }
+    .sedans {
+      background-color: orange;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+
+      .sedans__texto {
+       
+      }
+    }
+
+    .suvs {
+        background-color: turquoise;
+      }
+    .luxury {
+        background-color: blue;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    .bottom {
+        border-radius: 50px;
+        border-bottom: none;
+        text-align: center;
+      }
+    }
+  }
+
+
+/* Mobile screen*/
+@media screen and (max-width: 375px) {
+  body {
+    background-color: pink;
+  }
+}
+
+/* Desktop*/
+@media screen and (min-width: 1440px) {
+body{
+  background-color: antiquewhite;
+}
+}
