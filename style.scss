@@ -8,51 +8,148 @@
     flex-wrap: wrap;
     align-content: center;
     height: 100vh;
-  
+    font-size: 15px;
 
     h1 {
       font-family: "Big Shoulders Display", sans-serif;
     }
-    .container{
+    .container {
       display: flex;
+      height: 500px;
     }
+
     .sedans {
-      background-color: orange;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      background-color: hsl(31, 77%, 52%);
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px;
+      min-width: 250px;
+      max-width: 300px;
+    }
 
-      .sedans__texto {
-       
-      }
+    .sedans-img {
+      height: 40px;
+      width: 60px;
+      background-image: url(/images/icon-sedans.svg);
+      margin-left: 35px;
+    }
+    .sedans__texto {
+      line-height: 1.9;
+      padding: 40px;
+    }
+    .sedans_bottom {
+      color: hsl(31, 77%, 52%);
+      background-color: transparent;
+      border: none;
+      font-size: 15px;
+      font-weight: bold;
     }
 
     .suvs {
-        background-color: turquoise;
-      }
+      display: flex;
+      background-color: hsl(184, 100%, 22%);
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      min-width: 250px;
+      max-width: 300px;
+    }
+    .suvs-img {
+      height: 40px;
+      width: 60px;
+      background-image: url(/images/icon-suvs.svg);
+      margin-left: 35px;
+    }
+    .suvs__texto {
+      line-height: 1.9;
+      padding: 40px;
+    }
+    .suvs_bottom {
+      color: hsl(184, 100%, 22%);
+      background-color: transparent;
+      border: none;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
     .luxury {
-        background-color: blue;
-        border-bottom-right-radius: 10px;
-        border-top-right-radius: 10px;
-      }
+      background-color: hsl(179, 100%, 13%);
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      min-width: 250px;
+      max-width: 300px;
+    }
+    .luxury-img {
+      height: 40px;
+      width: 60px;
+      background-image: url(/images/icon-luxury.svg);
+      margin-left: 35px;
+    }
+    .luxury__texto {
+      line-height: 1.9;
+      padding: 40px;
+    }
+    .luxury_bottom {
+      color: hsl(179, 100%, 13%);
+      border: none;
+      font-size: 15px;
+      background-color: transparent;
+      font-weight: bold;
+    }
     .bottom {
-        border-radius: 50px;
-        border-bottom: none;
-        text-align: center;
-      }
+      font-size: 15px;
+      background-color: #ffff;
+      border-radius: 100px;
+      text-align: center;
+      padding: 19px;
+      margin-left: 30px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      cursor: hand;
+    }
+    .bottom:hover {
+      background-color: beige;
     }
   }
-
+}
 
 /* Mobile screen*/
 @media screen and (max-width: 375px) {
   body {
     background-color: pink;
+    height: auto;
+    margin: 20px;
+    .container {
+      flex-direction: column;
+    }
+    .sedans {
+      padding: 30px;
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 10px;
+    }
+
+    .suvs {
+      padding: 30px;
+    }
+    .luxury {
+      padding: 30px;
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 10px;
+    }
   }
 }
 
 /* Desktop*/
 @media screen and (min-width: 1440px) {
-body{
-  background-color: antiquewhite;
-}
+  body {
+    background-color: antiquewhite;
+  }
 }
