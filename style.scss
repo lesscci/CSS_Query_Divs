@@ -33,12 +33,12 @@
     .sedans-img {
       height: 40px;
       width: 60px;
-      background-image: url(/images/icon-sedans.svg);
       margin-left: 35px;
     }
     .sedans__texto {
       line-height: 1.9;
       padding: 40px;
+      
     }
     .sedans_bottom {
       color: hsl(31, 77%, 52%);
@@ -56,16 +56,17 @@
       justify-content: center;
       min-width: 250px;
       max-width: 300px;
+      
     }
     .suvs-img {
       height: 40px;
       width: 60px;
-      background-image: url(/images/icon-suvs.svg);
       margin-left: 35px;
     }
     .suvs__texto {
       line-height: 1.9;
       padding: 40px;
+
     }
     .suvs_bottom {
       color: hsl(184, 100%, 22%);
@@ -89,7 +90,6 @@
     .luxury-img {
       height: 40px;
       width: 60px;
-      background-image: url(/images/icon-luxury.svg);
       margin-left: 35px;
     }
     .luxury__texto {
